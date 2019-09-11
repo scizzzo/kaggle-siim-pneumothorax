@@ -1,0 +1,23 @@
+{
+  "train_dir": "../experiments/exp_004/fold_1",
+  "data_prefix": "fold",
+  "fold_id": 1,
+  "input_size": 1024,
+  "batch_size": 12,
+  "epochs": 40,
+  "lr": 0.0001,
+  "model_name": "resnet34",
+  "model_params": null,
+  "loss_name": "cross_entropy",
+  "loss_params": null,
+  "optim_name": "adam",
+  "optim_params": {
+    "lr": 1e-4 
+  },
+  "scheduler_name": "reduce_lr_on_plateau",
+  "scheduler_params": {
+    "mode": "max",
+    "factor": 0.5,
+    "patience": 5
+  }
+}

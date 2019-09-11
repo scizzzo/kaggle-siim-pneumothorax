@@ -1,0 +1,23 @@
+{
+  "train_dir": "../experiments/exp_009/fold_2",
+  "data_prefix": "fold",
+  "fold_id": 2,
+  "input_size": 512,
+  "batch_size": 9,
+  "epochs": 50,
+  "lr": 0.0001,
+  "model_name": "se_resnext101_dp",
+  "model_params": null,
+  "loss_name": "cross_entropy",
+  "loss_params": null,
+  "optim_name": "radam",
+  "optim_params": {
+    "lr": 1e-4 
+  },
+  "scheduler_name": "reduce_lr_on_plateau",
+  "scheduler_params": {
+    "mode": "max",
+    "factor": 0.1,
+    "patience": 5
+  }
+}

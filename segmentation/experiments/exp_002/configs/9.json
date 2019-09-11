@@ -1,0 +1,27 @@
+{
+  "train_dir": "../experiments/exp_002/fold_9/",
+   "data_prefix": "fold",
+  "fold_id": 9,
+  "input_size": 768,
+  "batch_size": 4,
+  "epochs": 30,
+  "model_name": "albunet_seres50",
+  "model_params": null,
+  "loss_name": "BCEDICELoss",
+  "loss_params": {
+    "loss_weights": {
+      "bce": 1.0,
+      "dice": 0.0
+    }
+  },
+  "optim_name": "radam",
+  "optim_params": {
+    "lr": 0.0001
+  },
+  "scheduler_name": "reduce_lr_on_plateau",
+  "scheduler_params": {
+    "mode": "max",
+    "factor": 0.5,
+    "patience": 3
+  }
+}
