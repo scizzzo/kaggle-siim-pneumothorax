@@ -8,12 +8,12 @@ Description of the solution can be found [here](https://www.kaggle.com/c/siim-ac
 In order to reproduce the solution, you must perform the following steps:
 
 ### Train
-#### 1) Train classification model
+#### 1) Train classification models
 ```
 ./classification/src/train.sh
 ```
 
-#### 2) Train segmentation model
+#### 2) Train segmentation models
 ```
 ./segmentation/src/train_long.sh
 ``` 
